@@ -46,9 +46,14 @@ public class WeatherAPI {
     }
 
     // Function to get, format, and return weather data
+    //ms ghent doing stuff
     public String parseWeatherData(String blockOfText) {
 
         //TODO
+        String CityName = getCityName(blockOfText);
+        String CityTemp = getTemp(blockOfText);
+        String CityHum = getHumidity(blockOfText);
+        return CityName + " " + CityTemp+ " fahrenheit " + CityHum + " Humidity index " ;
 
     }
 
